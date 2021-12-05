@@ -301,43 +301,25 @@
   width: 280px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
 @media (min-width: 768px) {
   .container-wrapper {
     width: 708px;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
 @media (min-width: 1440px) {
   .container-wrapper {
     width: 1220px;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
-=======
->>>>>>> 953a209bc20b0f70c31a950f09bd57f63ac1869d
-.page-header {
+/*.page-header {
   /*padding: 0 20px;
   /*display: flex;
   flex-direction: row;
   /*justify-content: space-between;*/
-}
+/*}*/
 @media (min-width: 768px) {
   .page-header {
     display: flex;
@@ -1691,6 +1673,46 @@
 }
 .example__toggle-text--underline:active {
   border-bottom: none;
+}
+.example__slider-toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 34px auto;
+  z-index: 10;
+  width: 228px;}
+  @media (min-width: 768px) {
+    .example__slider-toggle {
+      justify-content: space-between;
+      width: 570px;
+      margin: 0 auto;
+      padding-bottom: 69px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .example__slider-toggle {
+      margin: 0 0 0 auto;
+    }
+  }
+
+.example__slider-toggle-button {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: var(--basic-font-white);
+  border-radius: 7px;
+  border: 1px solid var(--basic-border-light-grey);
+  margin: 10px 0;
+}
+.example__slider-toggle-button-inside {
+  position: absolute;
+  top: 3.5px;
+  left: 5px;
+  width: 36px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: var(--basic-green-button);
+  border: none;
 }
 .slider__items {
   height: 215px;
@@ -3283,7 +3305,6 @@
 .page-footer {
   margin: 0;
   position: relative;
-  outline: 3px solid sandybrown;
 }
 /*@import "../less/blocks/logo.less";*/
 .map {

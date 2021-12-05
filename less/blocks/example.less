@@ -238,10 +238,10 @@
 .example__slider-toggle {
   position: relative;
   display: flex;
-  justify-content: center;
-  margin-top: 34px;
-  margin-bottom: 31px;
+  justify-content: space-between;
+  margin: 34px auto;
   z-index: 10;
+  width: 228px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -259,7 +259,7 @@
   .main-text(16px; 20px);
   text-transform: uppercase;
   z-index: 10;
-  padding: 0;
+  padding: 10px 0;
 
   @media (min-width: @tablet-width) {
     .main-text(20px; 20px);
@@ -323,4 +323,25 @@
     border-radius: 6px;
     background-color: var(--basic-border-light-grey);
   }
+}
+
+.example__slider-toggle-button {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: var(--basic-font-white);
+  border-radius: 7px;
+  border: 1px solid var(--basic-border-light-grey);
+  margin: 10px 0;
+}
+
+.example__slider-toggle-button-inside {
+  position: absolute;
+  top: 3.5px;
+  left: 5px;
+  width: 36px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: var(--basic-green-button);
+  border: none;
 }
