@@ -1,0 +1,109 @@
+// Начните писать стили здесь
+.contact {
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+  background-color: var(--basic-grey);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    z-index: 10;
+    background-color: var(--basic-font-white);
+    top: 95px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+      padding: 35px 0 36px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+      position: relative;
+    }
+  }
+}
+
+.contact--wrapper {
+  padding: 0;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: @desktop-width--wrapper;
+  }
+}
+
+.contact--color {
+  background-color: var(--basic-font-white);
+}
+
+.contact__title {
+  .main-text(16px; 20px);
+  text-transform: uppercase;
+  color: var(--basic-light-black);
+  text-align: left;
+  font-weight: 400;
+  width: 50%;
+
+  @media (min-width: @tablet-width) {
+    .main-text(20px; 26px);
+    width: 171px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .main-text(20px; 25px);
+    margin-left: 77px;
+    margin-top: 66px;
+    margin-right: 50px;
+    font-weight: 400;
+  }
+}
+
+.contact__text {
+  font-family: "Arial", sans-serif;
+  .main-text(14px; 20px);
+  color: var(--basic-dark-grey);
+  text-align: left;
+  width: 50%;
+
+  @media (min-width: @tablet-width) {
+    .main-text(16px; 20px);
+    width: 159px;
+    margin-right: 42px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    .main-text(16px; 20px);
+    width: 155px;
+    margin-top: 65px;
+    margin-right: 87px;
+    text-align: left;
+  }
+
+  &-indent {
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      margin-top: 21px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 20px;
+    }
+  }
+}

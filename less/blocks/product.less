@@ -1,0 +1,241 @@
+// Начните писать стили здесь
+.product {
+  /*margin: 0 20px;*/
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    margin-bottom: 62px;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.product__item {
+  background-color: var(--basic-grey);
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 375px;
+    margin-bottom: 2px;
+  }
+}
+
+.product__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--basic-green-button);
+  border-radius: 50%;
+  top: 24px;
+  left: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 446px;
+    top: 92px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 47px;
+  }
+}
+
+.product__item-picture {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 50px;
+  top: 20px;
+  left: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 192px;
+    top: 81px;
+    left: 476px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 95px;
+    height: 96px;
+    left: 54px;
+    top: 41px;
+  }
+}
+
+.product__item-picture--position {
+  width: 67px;
+  height: 50px;
+  top: 25px;
+  left: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 200px;
+    top: 90px;
+    left: 411px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
+    top: 45px;
+    left: 33px;
+  }
+}
+
+.product__item-title {
+  font-family: "Oswald", sans-serif;
+  line-height: 37px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 30px 34px 29px 91px;
+
+  @media (min-width: @tablet-width) {
+    margin: 76px 279px 26px 53px;
+    .main-text(36px; 36px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 77px 53px 73px 214px;
+  }
+}
+
+.product__item-text {
+  font-family: "Arial", sans-serif;
+  .main-text(14px; 18px);
+  color: var(--basic-dark-grey);
+  padding-bottom: 21px;
+  margin: 0 20px;
+  border-bottom: 1px solid var(--basic-border-gainsboro);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 10px 52px;
+    width: 377px;
+    .main-text(16px; 24px);
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 51px 6px 52px;
+    width: 467px;
+    border: none;
+  }
+
+  &--width {
+    @media (min-width: @tablet-width) {
+      width: 342px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 457px;
+    }
+  }
+}
+
+.product__item--wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.product__item-link {
+  position: relative;
+  .main-text(16px; 16px);
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+  margin-left: 20px;
+  /*margin-right: 100px;*/
+  padding-top: 19px;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin: 0 480px 35px 52px;
+    .main-text(20px; 30px);
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding-top: 0;
+    margin: 0 300px 0 52px;
+  }
+}
+
+.product__item-arrow-short {
+  display: block;
+  width: 24px;
+  height: 10px;
+}
+
+.product__item-arrow-long {
+  display: none;
+  width: 32px;
+  height: 12px;
+}
+
+.product__item-arrow-short,
+.product__item-arrow-long {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 119px;
+
+  @media (min-width: @tablet-width) {
+    bottom: 67px;
+    left: 185px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 69px;
+    left: 188px;
+  }
+}
+
+.product__item--wrapper:hover,
+.product__item--wrapper:focus {
+  .product__item-arrow-short {
+    display: none;
+  }
+
+  .product__item-arrow-long {
+    display: block;
+  }
+}
+
+.product__item--wrapper:active {
+  .product__item-link,
+  .product__item-arrow-long {
+    opacity: 0.3;
+  }
+}
