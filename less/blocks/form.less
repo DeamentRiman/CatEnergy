@@ -126,25 +126,26 @@
   }
 
   .form__fieldset-legend--second-wrapper {
+    position: relative;
     margin-top: 6px;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       background-color: var(--basic-green-button);
-      min-width: 158px;
+      width: 158px;
       height: 2px;
       top: 16px;
-      right: -20px;
+      right: -181px;
 
       @media (min-width: @tablet-width) {
-        min-width: 478px;
-        right: -30px;
+        width: 478px;
+        right: -518px;
         top: 31px;
       }
 
       @media (min-width: @desktop-width) {
-        min-width: 1108px;
+        width: 1108px;
         top: 49px;
         right: -110px;
       }
@@ -154,14 +155,14 @@
       margin: 39px 40px 76px 40px;
       padding-top: 10px;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         background-color: var(--basic-green-button);
-        min-width: 30px;
+        width: 30px;
         height: 2px;
         top: 31px;
-        left: -30px;
+        left: -70px;
       }
     }
 
@@ -169,11 +170,11 @@
       margin: 39px 40px 75px 0;
       padding-top: 27px;
 
-      &::after {
-        min-width: 70px;
-        height: 2px;
+      &::before {
+        width: 70px;
+
         top: 49px;
-        left: -110px;
+        left: -1172px;
       }
     }
   }
@@ -186,48 +187,48 @@
   margin-bottom: 21px;
 
   .form__legend {
+    position: relative;
     margin-bottom: 28px;
     font-size: 24px;
     line-height: 26px;
     font-family: "Oswald", sans-serif;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: var(--basic-green-button);
-    min-width: 136px;
-    height: 2px;
-    top: -41px;
-    right: -20px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 25px;
-
-    &::before {
-      min-width: 446px;
-      top: -67px;
-      right: -30px;
-    }
-
+  
     &::after {
       content: "";
       position: absolute;
       background-color: var(--basic-green-button);
-      min-width: 30px;
+      width: 136px;
       height: 2px;
-      top: -67px;
-      left: -30px;
+      top: 13px;
+      right: -159px;
+    }}
+  
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+/*?*/
+  .form__legend {
+    margin-bottom: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 40px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--basic-green-button);
+      width: 30px;
+      height: 2px;
+      top: 22px;
+      left: -70px;
     }
 
-    .form__legend {
-      margin-bottom: 50px;
-      font-family: "Oswald", sans-serif;
-      font-size: 36px;
-      line-height: 36px;
-      margin-left: 40px;
+    &::after {
+      width: 446px;
+      top: 22px;
+      right: -488px;
     }
+  }
   }
 
   @media (min-width: @desktop-width) {
@@ -236,21 +237,18 @@
     flex-wrap: nowrap;
     margin: 0 auto 29px;
 
-    &::before {
-      min-width: 1078px;
-      top: -63px;
-      right: -96px;
-    }
-
-    &::after {
-      min-width: 70px;
-      height: 2px;
-      top: -63px;
-      left: -95px;
-    }
-
     .form__legend {
       margin-left: 0;
+
+      &::after {
+        width: 1078px;
+        right: -1141px;
+      }
+  
+      &::before {
+        width: 70px;
+        left: -110px;
+      }
     }
   }
 }
@@ -748,6 +746,7 @@
 }
 
 .form-legend--contact {
+  position: relative;
   margin-bottom: 29px;
   font-size: 24px;
   line-height: 26px;
@@ -766,35 +765,35 @@
     width: 100%;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    min-width: 99px;
+    width: 99px;
     height: 2px;
     right: -20px;
     top: 44px;
     background-color: var(--basic-green-button);
 
     @media (min-width: @tablet-width) {
-      min-width: 145px;
+      width: 145px;
       top: 50px;
-      right: -30px;
+      right: -187px;
     }
 
     @media (min-width: @desktop-width) {
-      right: -110px;
-      min-width: 778px;
+      right: -130px;
+      width: 778px;
       top: 22px;
     }
   }
 
-  &::after {
+  &::before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      min-width: 30px;
+      width: 30px;
       height: 2px;
-      left: -30px;
+      left: -70px;
       top: 50px;
       background-color: var(--basic-green-button);
     }
@@ -802,7 +801,7 @@
     @media (min-width: @desktop-width) {
       top: 22px;
       left: -110px;
-      min-width: 70px;
+      width: 70px;
     }
   }
 }
