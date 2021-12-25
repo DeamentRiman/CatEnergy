@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
   </head>
 
   <body class="page page-body">
@@ -120,7 +120,7 @@
       <div class="container-wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img  class="page-header__logo--size" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Кэт энерджи">
           </picture>
@@ -226,20 +226,27 @@
                 <use xlink:href="#example-border"></use>
               </svg>
               <p class="example__item-value"> 60 дней</p>
-              <p class="example__item-comment">затрачено времени</p>
+              <p class="example__item-comment example__item-comment--position">затрачено времени</p>
             </li>
           </ul>
           <p class="example__total-price">Затраты на питание: <span class="example__total-price--position">15000 руб.</span></p>
         </div>
         <div class="example__slider--container">
-          <picture class="example__slider-image">
+          <picture class="example__slider-image example__slider-image--big-cat">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-
             <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
             <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="Кот с лишним весом">
+          </picture>
+          <picture class="example__slider-image example__slider-image--fit-cat">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" alt="Кот с лишним весом">
           </picture>
           <div class="example__slider-toggle">
             <p class="example__slider-toggle-text example__slider-toggle-text--underline">Было</p>
@@ -256,7 +263,7 @@
 
     <footer class="page-footer">
       <div class="contact--wrapper">
-        <section class="contact contact--color">
+        <section class="contact">
         <div class="container-wrapper">
         <h2 class="visually-hidden">Контакты</h2>
             <p class="contact__title">
@@ -270,46 +277,50 @@
       </div>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe  class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931528412!2d30.32225090912724!3d59.93871649759979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619971141800!5m2!1sru!2sru" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe  class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931528412!2d30.32225090912724!3d59.93871649759979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619971141800!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
       <section class="social-link">
         <h2 class="visually-hidden">Социальные сети</h2>
         <div class="container-wrapper">
           <div class="social-link__logo">
-            <svg class="social-link__logo--wrapper" width="128" height="24">
+            <svg class="social-link__logo--wrapper">
               <use xlink:href="#logo-cat-energy"></use>
             </svg>
           </div>
-          <ul class="social-link__list">
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-vk">
-                  <use xlink:href="#vk-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-insta">
-                  <use xlink:href="#insta-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-fb">
-                  <use xlink:href="#fb-logo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="social-link__list--wrapper">
+            <ul class="social-link__list">
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-vk">
+                    <use xlink:href="#vk-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-insta">
+                    <use xlink:href="#insta-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-fb">
+                    <use xlink:href="#fb-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="social-link__academy">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-text">HTML Academy</a>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-image">
-              <svg class="social-link__academy-logo">
-                <use xlink:href="#htmlacademy-logo"></use>
-              </svg>
-            </a>
+            <div class="social-link__academy--wrapper">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-text">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-image">
+                <svg class="social-link__academy-logo">
+                  <use xlink:href="#htmlacademy-logo"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>

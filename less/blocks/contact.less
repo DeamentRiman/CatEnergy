@@ -1,12 +1,13 @@
 // Начните писать стили здесь
 .contact {
   display: flex;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  // padding-top: 30px;
+  // padding-bottom: 25px;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding-top: 30px;
+    // padding-top: 62px;
+    // padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,7 +16,8 @@
     height: 201px;
     z-index: 10;
     background-color: var(--basic-font-white);
-    top: 95px;
+    bottom: 257px;
+    left: 7.5%;
     margin: 0;
     padding: 0;
   }
@@ -26,28 +28,31 @@
     justify-content: space-between;
 
     @media (min-width: @tablet-width) {
-      padding: 35px 0 36px 0;
+      padding: 34px 0 36px 0;
     }
 
     @media (min-width: @desktop-width) {
       padding: 0;
-      position: relative;
     }
   }
 }
 
 .contact--wrapper {
-  padding: 0;
-  position: relative;
+  padding: 29px 20px 27px 20px;
+  background-color: var(--basic-font-white);
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: @desktop-width--wrapper;
+    padding: 0;
+    background-color: var(--basic-font-white);
   }
 }
-
-.contact--color {
-  background-color: var(--basic-font-white);
+.contact--wrapper-background{
+  padding-top: 27px;
+  background-color: var(--basic-grey);
+  
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .contact__title {
@@ -61,7 +66,7 @@
   @media (min-width: @tablet-width) {
     .main-text(20px; 26px);
     width: 171px;
-    margin-left: 40px;
+    margin-left: 41px;
   }
 
   @media (min-width: @desktop-width) {

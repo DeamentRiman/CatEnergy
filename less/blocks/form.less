@@ -89,6 +89,14 @@
     }
   }
 }
+.form__fieldset--wrapper-position{
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
 
 .form__fieldset--wrapper-second {
   padding: 0;
@@ -175,7 +183,7 @@
   padding: 0;
   border: none;
   margin-top: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   .form__legend {
     margin-bottom: 28px;
@@ -195,11 +203,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     &::before {
       min-width: 446px;
-      top: -64px;
+      top: -67px;
       right: -30px;
     }
 
@@ -209,12 +217,12 @@
       background-color: var(--basic-green-button);
       min-width: 30px;
       height: 2px;
-      top: -64px;
+      top: -67px;
       left: -30px;
     }
 
     .form__legend {
-      margin-bottom: 49px;
+      margin-bottom: 50px;
       font-family: "Oswald", sans-serif;
       font-size: 36px;
       line-height: 36px;
@@ -226,19 +234,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 29px;
 
     &::before {
       min-width: 1078px;
       top: -63px;
-      right: -110px;
+      right: -96px;
     }
 
     &::after {
       min-width: 70px;
       height: 2px;
       top: -63px;
-      left: -110px;
+      left: -95px;
     }
 
     .form__legend {
@@ -291,7 +299,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 569px;
+    width: 571px;
   }
 }
 
@@ -313,7 +321,7 @@
     .form__fieldset-item {
       position: relative;
       width: 242px;
-      margin-right: 101px;
+      margin-right: 102px;
       margin-bottom: 27px;
     }
 
@@ -332,11 +340,11 @@
     .form__fieldset-item {
       position: relative;
       flex-wrap: nowrap;
-      width: 245px;
+      width: 242px;
       margin: 0;
       margin-top: 7px;
-      margin-right: 79px;
-      margin-bottom: 57px;
+      margin-right: 85px;
+      margin-bottom: 27px;
       justify-content: space-between;
     }
 
@@ -378,7 +386,7 @@
 }
 
 .form__fieldset-item-label--second {
-  margin-right: 6px;
+  margin-right: 4px;
 
   @media (min-width: @tablet-width) {
     margin: auto 10px auto 41px;
@@ -420,7 +428,7 @@
   height: 15px;
   top: 16px;
   right: 16px;
-  background-image: url("/img/icon-email.svg");
+  background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
   fill: var(--basic-catalog-title);
 
@@ -447,7 +455,7 @@
   height: 20px;
   top: 14px;
   right: 14px;
-  background-image: url("/img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -473,13 +481,15 @@
   border: 2px solid var(--basic-dark-grey);
 }
 
-.form__fieldset-item-label--third::before + .form__fieldset-item-input-text:focus {
+.form__fieldset-item-input-text:focus .form__fieldset-item-label--third::before,
+.form__fieldset-item-input-text:active .form__fieldset-item-label--third::before {
   background-image: url("/img/icon-email-green.svg");
 }
 
-.form__fieldset-item-input-text:invalid {
+.form__fieldset-item-input-text:invalid, .form__fieldset-item-phone:invalid {
   border: 2px solid var(--basic-border-error);
 }
+
 
 
 .form__fieldset-item-input-text--wrapper {
@@ -564,7 +574,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
+    top: 4px;
+    left: -43px;
   }
 }
 
@@ -587,7 +598,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 14px;
+    top: 17px;
+    left: -32px;
   }
 }
 
@@ -722,10 +734,10 @@
   @media (min-width: @desktop-width) {
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 19px;
 
-    .form__fieldset-item {
+    .form__fieldset-item:first-child {
       margin-right: 81px;
     }
 
@@ -739,7 +751,7 @@
   margin-bottom: 29px;
   font-size: 24px;
   line-height: 26px;
-  padding-top: 26px;
+  padding-top: 28px;
   font-family: "Oswald", sans-serif;
 
   @media (min-width: @tablet-width) {
@@ -760,7 +772,7 @@
     min-width: 99px;
     height: 2px;
     right: -20px;
-    top: 42px;
+    top: 44px;
     background-color: var(--basic-green-button);
 
     @media (min-width: @tablet-width) {
@@ -816,3 +828,14 @@
     margin: auto 13px auto 0;
   }
 }
+.form__fieldset-item-input-checkbox:disabled + label,
+.form__fieldset-item-input-radio:disabled + label {
+    opacity: 0.3;
+}
+
+.form__fieldset-item--width{
+  @media (min-width: @desktop-width) {
+    width: 500px;
+  }
+}
+

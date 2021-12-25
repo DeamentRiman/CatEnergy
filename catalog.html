@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="../css/styles.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
   </head>
 
   <body class="page__body page">
@@ -101,34 +101,36 @@
         </div>
         <div class="catalog--wrapper">
           <article class="catalog__item">
-            <picture class="catalog__item-img-size">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg" width="138" height="140" alt="Корм Cat energy pro 500 г">
-            </picture>
-            <div class="catalog__item-text">
-              <h3 class="catalog__item-name">
-                Cat energy Pro 500 г
-              </h3>
-              <table class="catalog__table">
-                <tr>
-                  <th class="catalog__table-text">Масса</th>
-                  <td class="catalog__table-text catalog__table-text--text-position">500 г</td>
-                </tr>
-                <tr>
-                  <th class="catalog__table-text">Вкус</th>
-                  <td class="catalog__table-text catalog__table-text--text-position">Курица</td>
-                </tr>
-                <tr>
-                  <th class="catalog__table-text">Цена</th>
-                  <td class="catalog__table-text catalog__table-text--text-position">700 P.</td>
-                </tr>
-              </table>
-            </div>
-          <a href="catalog.html" class="button button--catalog">Заказать</a>
+              <picture class="catalog__item-img-size">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg" width="138" height="140" alt="Корм Cat energy pro 500 г">
+              </picture>
+              <div class="catalog__item-text">
+                <h3 class="catalog__item-name">
+                  Cat energy Pro 500 г
+                </h3>
+                <table class="catalog__table">
+                  <tr>
+                    <th class="catalog__table-text">Масса</th>
+                    <td class="catalog__table-text catalog__table-text--text-position">500 г</td>
+                  </tr>
+                  <tr>
+                    <th class="catalog__table-text">Вкус</th>
+                    <td class="catalog__table-text catalog__table-text--text-position">Курица</td>
+                  </tr>
+                  <tr>
+                    <th class="catalog__table-text">Цена</th>
+                    <td class="catalog__table-text catalog__table-text--text-position">700 P.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="catalog__item--button">
+                <a href="catalog.html" class="button button--catalog">Заказать</a>
+              </div>
           </article>
           <article class="catalog__item">
             <picture class="catalog__item-img-size">
@@ -159,10 +161,12 @@
               </tr>
             </table>
             </div>
-          <a href="#" class="button button--catalog">Заказать</a>
-        </article>
+            <div class="catalog__item--button">
+              <a href="#" class="button button--catalog">Заказать</a>
+            </div>
+          </article>
 
-        <article class="catalog__item">
+          <article class="catalog__item">
           <picture class="catalog__item-img-size">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -191,9 +195,11 @@
               </tr>
             </table>
           </div>
-          <a href="#" class="button button--catalog">Заказать</a>
-        </article>
-        <article class="catalog__item">
+          <div class="catalog__item--button">
+            <a href="#" class="button button--catalog">Заказать</a>
+          </div>
+          </article>
+          <article class="catalog__item">
           <picture class="catalog__item-img-size">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -222,7 +228,9 @@
               </tr>
             </table>
           </div>
-          <a href="#" class="button button--catalog">Заказать</a>
+          <div class="catalog__item--button">
+            <a href="#" class="button button--catalog">Заказать</a>
+          </div>
         </article>
         <article class="catalog__item">
           <picture class="catalog__item-img-size">
@@ -253,7 +261,9 @@
               </tr>
             </table>
           </div>
-          <a href="#" class="button button--catalog">Заказать</a>
+          <div class="catalog__item--button">
+            <a href="#" class="button button--catalog">Заказать</a>
+          </div>
         </article>
         <article class="catalog__item">
           <picture class="catalog__item-img-size">
@@ -284,7 +294,9 @@
               </tr>
             </table>
           </div>
-          <a href="#" class="button button--catalog">Заказать</a>
+          <div class="catalog__item--button">
+            <a href="#" class="button button--catalog">Заказать</a>
+          </div>
         </article>
         <article class="catalog__item">
           <picture class="catalog__item-img-size">
@@ -315,35 +327,45 @@
               </tr>
             </table>
           </div>
-          <a href="#" class="button button--catalog">Заказать</a>
+          <div class="catalog__item--button">
+            <a href="#" class="button button--catalog">Заказать</a>
+          </div>
         </article>
         <article class="catalog__plus">
-          <h2 class="visually-hidden">Дополнительные товары</h2>
-          <div class="catalog__item-plus-text">
-            <p class="catalog__plus-text">Показать еще 100500 товаров</p>
-            <p class="catalog__plus-text-comment">На самом деле вкусов гораздо больше!</p>
+          <div class="catalog__plus--wrapper">
+            <h2 class="visually-hidden">Дополнительные товары</h2>
+            <div class="catalog__item-plus-text">
+              <p class="catalog__plus-text">Показать еще 100500 товаров</p>
+              <p class="catalog__plus-text-comment">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <a href="#" class="button button--catalog catalog-plus__button">Показать все</a>
           </div>
-          <a href="#" class="button button--catalog catalog-plus__button">Показать все</a>
         </article>
-        </div>
+      </div>
       </section>
 
       <section class="additions">
         <div class="container-wrapper">
-          <h2 class="additions__title">Дополнительные товары</h2>
+          <div class="additions--wrapper">
+            <h2 class="additions__title">Дополнительные товары</h2>
+          </div>
           <div class="addition--wrapper">
             <article class="additions__item">
-              <h3 class="additions__item-title">Сахарозаменитель</h3>
-              <table class="additions__table">
-                <tr>
-                  <th class="additions__table-item">1 упаковка (100 г)</th>
-                  <td class="additions__table-item additions__table-item--wrapper">200 P.</td>
-                </tr>
-              </table>
-              <a class="button button--catalog-additions" href="#">Заказать</a>
+              <div class="additions__item--wrapper">
+                <h3 class="additions__item-title">Сахарозаменитель</h3>
+                <table class="additions__table">
+                  <tr>
+                    <th class="additions__table-item">1 упаковка (100 г)</th>
+                    <td class="additions__table-item additions__table-item--wrapper">200 P.</td>
+                  </tr>
+                </table>
+                  <a class="button button--catalog-additions" href="#">Заказать</a>
+              </div>
+              
             </article>
 
             <article class="additions__item">
+              <div class="additions__item--wrapper">
               <h3 class="additions__item-title">Питьевая вода</h3>
               <table class="additions__table">
                 <tr>
@@ -352,9 +374,11 @@
                 </tr>
               </table>
               <a class="button button--catalog-additions" href="#">Заказать</a>
+            </div>
             </article>
 
             <article class="additions__item">
+              <div class="additions__item--wrapper">
               <h3 class="additions__item-title">Молоко</h3>
               <table class="additions__table">
                 <tr>
@@ -363,9 +387,11 @@
                 </tr>
               </table>
               <a class="button button--catalog-additions" href="#">Заказать</a>
+              </div>
             </article>
 
             <article class="additions__item">
+              <div class="additions__item--wrapper">
               <h3 class="additions__item-title">Витамины</h3>
               <table class="additions__table">
                 <tr>
@@ -374,6 +400,7 @@
                 </tr>
               </table>
               <a class="button button--catalog-additions" href="#">Заказать</a>
+              </div>
             </article>
           </div>
           <article class="additional_surprise">
@@ -389,7 +416,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="contact--wrapper">
+      <div class="contact--wrapper contact--wrapper-background">
         <section class="contact">
         <div class="container-wrapper">
         <h2 class="visually-hidden">Контакты</h2>
@@ -404,7 +431,7 @@
       </div>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe  class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931528412!2d30.32225090912724!3d59.93871649759979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619971141800!5m2!1sru!2sru" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe  class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931528412!2d30.32225090912724!3d59.93871649759979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619971141800!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
       <section class="social-link">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -414,36 +441,40 @@
               <use xlink:href="#logo-cat-energy"></use>
             </svg>
           </div>
-          <ul class="social-link__list">
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-vk">
-                  <use xlink:href="#vk-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-insta">
-                  <use xlink:href="#insta-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-link__list-item">
-              <a href="">
-                <svg class="social-link__list-item-fb">
-                  <use xlink:href="#fb-logo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="social-link__list--wrapper">
+            <ul class="social-link__list">
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-vk">
+                    <use xlink:href="#vk-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-insta">
+                    <use xlink:href="#insta-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link__list-item">
+                <a href="">
+                  <svg class="social-link__list-item-fb">
+                    <use xlink:href="#fb-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="social-link__academy">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-text">HTML Academy</a>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-image">
-              <svg class="social-link__academy-logo">
-                <use xlink:href="#htmlacademy-logo"></use>
-              </svg>
-            </a>
+            <div class="social-link__academy--wrapper">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-text">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="social-link__academy-image">
+                <svg class="social-link__academy-logo">
+                  <use xlink:href="#htmlacademy-logo"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>

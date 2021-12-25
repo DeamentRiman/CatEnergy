@@ -1,9 +1,17 @@
 // Начните писать стили здесь
 .additions {
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  .container-wrapper {
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 86px;
@@ -13,6 +21,7 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      width: 1220px;
     }
   }
 
@@ -59,9 +68,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-top: 1px solid var(--basic-border-light-grey);
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    border-top: none;
+  }
 
   @media (min-width: @desktop-width) {
     width: 73.5%;
+    margin: 0;
   }
 }
 
@@ -69,8 +86,20 @@
   .main-text(24px; 24px);
   margin-top: 29px;
   padding-bottom: 34px;
-  border-bottom: 1px solid var(--basic-border-light-grey);
+  // border-bottom: 1px solid var(--basic-border-light-grey);
   font-weight: 400;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 53px;
+    height: 2px;
+    background-color: var(--basic-green-button);
+    top: 14px;
+    right: -20px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 9px;
@@ -78,6 +107,23 @@
     border: none;
     margin-left: 37px;
     margin-bottom: 47px;
+
+    &::after {
+      width: 328px;
+      height: 2px;
+      top: 22px;
+      right: -30px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: var(--basic-green-button);
+      width: 30px;
+      top: 22px;
+      left: -67px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -87,6 +133,16 @@
     border: none;
     margin-top: 16px;
     margin-bottom: 77px;
+
+    &::after {
+      width: 927px;
+      right: -110px;
+    }
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
   }
 }
 
@@ -101,6 +157,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid var(--basic-border-light-grey);
+    border-top: none;
     padding: 13px 32px 28px 38px;
   }
 
@@ -120,6 +177,12 @@
   }
 }
 
+.additions__item:first-child {
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid var(--basic-border-light-grey);
+  }
+}
+
 .additions__item-title {
   font-size: 16px;
   line-height: 20px;
@@ -130,22 +193,28 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    width: 55%;
+    float: left;
+    margin-top: 14px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 26px auto 25px 0;
     padding: 0;
+    width: max-content;
   }
 }
 
 .additions__table {
+  width: 100%;
   margin-top: 9px;
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 13px;
+    margin-top: 14px;
     margin-bottom: 21px;
-    width: 288px;
+    width: 45%;
+    float: right;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,6 +222,7 @@
     margin-right: 35px;
     padding: 0;
     width: 294px;
+    float: left;
   }
 }
 
@@ -192,7 +262,7 @@
 
 .additional_surprise {
   display: block;
-  max-width: 320px;
+  width: 280px;
   height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -207,7 +277,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    max-width: 708px;
+    width: 708px;
     height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -241,7 +311,7 @@
   display: block;
   width: 60px;
   height: 60px;
-  top: 64px;
+  top: 69px;
   left: 112px;
   z-index: 2;
   fill: var(--basic-font-white);
@@ -274,5 +344,32 @@
   @media (min-width: @desktop-width) {
     padding: 184px 43px 42px 41px;
     text-align: center;
+  }
+}
+
+.additions--wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.additions__item--wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 633px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    display: flex;
   }
 }
