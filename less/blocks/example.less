@@ -79,7 +79,7 @@
   padding-top: 48px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 7px;
+    padding-top: 0px;
   }
 
   @media (min-width: @desktop-width) {
@@ -203,6 +203,7 @@
     top: 63px;
     left: 22px;
   }
+
   @media (min-width: @desktop-width) {
     top: 63px;
     left: 31px;
@@ -230,7 +231,7 @@
     position: absolute;
     top: 460px;
     left: 0;
-    width: 327px; /*проверить*/
+    width: 327px;
     text-align: left;
   }
 }
@@ -251,19 +252,18 @@
   position: relative;
   display: flex;
   z-index: 10;
-  margin: 34px auto 21px auto;
+  margin: 9px auto 21px auto;
   justify-content: space-between;
   width: 197px;
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
     width: 570px;
     margin: 0 auto;
     padding-bottom: 69px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 auto;
+    margin: 4px 0 0 auto;
   }
 }
 
@@ -345,6 +345,7 @@
   border-radius: 7px;
   border: 1px solid var(--basic-border-light-grey);
   margin: 14px 0;
+
   @media (min-width: @tablet-width) {
     width: 428px;
     height: 6px;
@@ -362,6 +363,7 @@
   border-radius: 3px;
   background-color: var(--basic-green-button);
   border: none;
+
   @media (min-width: @tablet-width) {
     width: 34px;
     height: 34px;
@@ -371,7 +373,8 @@
     top: -12px;
     left: 191px;
   }
-  &:before{
+
+  &:before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
@@ -385,21 +388,125 @@
     }
   }
 }
-.example__slider-image--fit-cat{
-  display: none;
-  @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
-    width: 100%;
-    background-position: center;
-    overflow: hidden;
-    top: 0;
-  }
-}
-.example__item-comment--position{
+
+// .example__slider-image--fit-cat {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     background-position: center;
+//     overflow: hidden;
+//     top: 0;
+//   }
+// }
+
+.example__item-comment--position {
   @media (min-width: @desktop-width) {
     left: 13px;
-    background-color:  var(--basic-grey-whisper);
+    background-color: var(--basic-grey-whisper);
     padding: 0 5px;
+  }
+}
+.example__slider-image--box{
+  position: relative;
+    height: 240px;
+    top: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    height: 462px;
+    top: 0;
+    left: -16px;
+    margin-bottom: 66px;
+  }
+  @media (min-width: @desktop-width) {
+    top: -76px;
+    left: -40px;
+    margin-bottom: 0;
+  }
+}
+.example__slider-image--fit-cat {
+    position: relative;
+    display: block;
+    height: 100%;
+    z-index: 1;
+}
+
+.example__slider-image--fit-cat {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: block;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.example__slider-image--fit-cat img,
+.example__slider-image--big-cat img {
+    width: 280px;
+    max-width: 280px;
+    height: 240px;
+    position: relative;
+    display: block;
+  @media (min-width: @tablet-width) {
+    width: 690px;
+    max-width: 690px;
+    height: 517px;
+  }
+}
+
+.example__slider-image--big-cat {
+  position: absolute;
+  width: 280px;
+  height: 240px;
+  overflow: hidden;
+  top: 0;
+  left: -15px;
+  z-index: 2;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--basic-grey-whisper);
+  }
+
+
+  @media (min-width: @tablet-width) {
+    width: 338px;
+    height: 517px;
+    top: 0;
+    left: 0;
+
+    &:before {
+      background-color: none;
+      background-image: linear-gradient(to bottom, #fff 177px, var(--basic-grey-whisper) 174px);
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #fff 188px, var(--basic-grey-whisper) 188px);
+  }
+}}
+
+.example__total-price {
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    margin-top: 36px;
+    text-align: center;
+    z-index: 10
   }
 }
