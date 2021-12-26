@@ -2017,6 +2017,9 @@ input[type='range'].example__slider-toggle-range-mobile {
   background-color: transparent;
 }
 input[type='range'].example__slider-toggle-range-mobile::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       width: 84px;
       height: 14px;
       background-color: #fff;
@@ -2026,6 +2029,8 @@ input[type='range'].example__slider-toggle-range-mobile::-webkit-slider-runnable
     }
 input[type=range].example__slider-toggle-range-mobile::-webkit-slider-thumb {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 35px;
     height:6px;
     margin: 3px 0 3px 0;
@@ -4894,28 +4899,4 @@ a {
   .form__fieldset-item--width {
     width: 500px;
   }
-}
-
-input[type='range'] {
-  overflow: hidden;
-  width: 84px;
-  height: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-}
-input[type='range']::-webkit-slider-runnable-track {
-      height: 14px;
-      background-color: #fff;
-      border: 1px solid grey;
-      border-radius: 7px;
-    }
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 35px;
-    height:6px;
-    margin: 3px auto 3px 3px;
-    border-radius: 3px;
-    background: green;
 }
