@@ -256,8 +256,11 @@
           </div>
           <div class="example__slider-toggle">
             <p class="example__slider-toggle-text example__slider-toggle-text--underline">Было</p>
-            <div class="example__slider-toggle-range"></div>
-            <div class="example__slider-toggle-button">
+            <div class="example__slider-toggle-range">
+              <input type="range" class="example__slider-toggle-range-mobile" min="1" max="2" value="1" step="1">
+              <input type="range" class="example__slider-toggle-range-not-mobile" min="1" max="428" value="217" step="1">
+            </div>
+            <div class="example__slider-toggle-button" style="display: none;">
               <button class="example__slider-toggle-button-inside"></button>
             </div>
             <p class="example__slider-toggle-text example__slider-toggle-text--underline">Стало</p>
@@ -332,5 +335,6 @@
       </section>
     </footer>
     <script src="js/nav-open.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
